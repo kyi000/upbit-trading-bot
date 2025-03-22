@@ -1,0 +1,63 @@
+# 거래 설정
+trading:
+  markets: ["KRW-BTC", "KRW-ETH"]  # 거래할 마켓 목록
+  interval: 5  # 데이터 수집 간격(분)
+  max_invest_ratio: 0.2  # 총 자산 대비 최대 투자 비율(코인당)
+  trade_amount: 10000  # 거래 단위(KRW)
+
+# 전략 설정
+strategy:
+  # 이동평균선 설정
+  ma_crossover:
+    enabled: true
+    short_period: 9
+    long_period: 21
+    trend_period: 50
+  
+  # RSI 설정
+  rsi:
+    enabled: true
+    period: 14
+    overbought: 70
+    oversold: 30
+    use_divergence: true
+  
+  # 볼린저 밴드 설정
+  bollinger:
+    enabled: true
+    period: 20
+    std_dev: 2.0
+  
+  # 거래량 설정
+  volume:
+    enabled: true
+    period: 20
+    surge_threshold: 2.0  # 평균 대비 거래량 증가 배수
+
+# 위험 관리 설정
+risk_management:
+  stop_loss: 0.03  # 손절매 비율(3%)
+  take_profit: 0.05  # 이익실현 비율(5%)
+  trailing_stop: 0.02  # 추적 손절매 비율(2%)
+  use_trailing_stop: true
+
+# 백테스팅 설정
+backtest:
+  start_date: "2023-01-01"  # 백테스팅 시작일
+  end_date: "2023-12-31"  # 백테스팅 종료일
+  initial_balance: 1000000  # 초기 자산(KRW)
+  fee: 0.0005  # 거래 수수료(0.05%)
+
+# 알림 설정
+notification:
+  telegram:
+    enabled: false
+  email:
+    enabled: false
+
+# 로깅 설정
+logging:
+  level: "INFO"  # 로깅 레벨(DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  file: "logs/trading_bot.log"  # 로그 파일 경로
+  max_size: 10485760  # 최대 로그 파일 크기(10MB)
+  backup_count: 10  # 백업 파일 수
