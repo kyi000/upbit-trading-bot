@@ -1,0 +1,17 @@
+# 업비트 API 키 정보
+upbit:
+  access_key: "YOUR_ACCESS_KEY_HERE"
+  secret_key: "YOUR_SECRET_KEY_HERE"
+
+# 텔레그램 API 정보(알림용)
+telegram:
+  token: "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+  chat_id: "YOUR_TELEGRAM_CHAT_ID_HERE"
+
+# 이메일 설정(알림용)
+email:
+  sender: "your-email@example.com"
+  password: "your-email-password"
+  recipients: ["recipient1@example.com", "recipient2@example.com"]
+  smtp_server: "smtp.example.com"
+  smtp_port: 587
