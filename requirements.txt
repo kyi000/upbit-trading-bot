@@ -1,0 +1,27 @@
+# API 연결
+pyupbit==0.2.33
+
+# 데이터 처리
+pandas==2.2.1
+numpy==1.26.4
+
+# 기술적 지표
+pandas-ta==0.3.14b0
+
+# 데이터 시각화
+matplotlib==3.8.3
+plotly==5.19.0
+
+# 설정 파일
+pyyaml==6.0.1
+
+# 로깅 및 알림
+python-telegram-bot==20.8
+
+# 유틸리티
+schedule==1.2.1
+requests==2.31.0
+tqdm==4.66.2
+
+# 테스트
+pytest==7.4.4
