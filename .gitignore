@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# API 키 및 민감한 설정 파일
+config/api_keys.yaml
+
+# 로그 파일
+logs/
+*.log
+
+# 데이터 파일
+data/
+*.csv
+*.pickle
+
+# 기타
+.DS_Store
+Thumbs.db
